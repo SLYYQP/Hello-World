@@ -4,12 +4,15 @@
 
 ## 1.learn the operations of array
 <br>
+* 编程语言  
+    * 脚本语言  
+        * Python  
 * Operations  
-    * add
-    * delete
-    * modify
-    * search
-    * tranversal
+    * add  
+    * delete  
+    * modify  
+    * search  
+    * tranversal  
      
   
 ## 2.leran the operations of list
