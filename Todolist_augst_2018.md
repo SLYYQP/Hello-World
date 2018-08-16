@@ -4,7 +4,7 @@
 
 ## 1.learn the operations of array
 <br>
-  * 编程语言  
+* 编程语言  
     * 脚本语言  
         * Python    
      
