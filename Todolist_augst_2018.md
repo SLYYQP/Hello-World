@@ -4,8 +4,12 @@
 
 ## 1.learn the operations of array
 <br>
-     * add
-     delete,modify,search,tranversal operations
+* Operations  
+    * add
+    * delete
+    * modify
+    * search
+    * tranversal
      
   
 ## 2.leran the operations of list
