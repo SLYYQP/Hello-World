@@ -4,8 +4,12 @@
 
 ## 1.learn the operations of array
 
-* 编程语言  
-    * 脚本语言  
+* Operations  
+    * add  
+    * delete  
+    * modify  
+    * search  
+    * tranversal  
   
 ## 2.leran the operations of list
 <br>
