@@ -6,13 +6,7 @@
 <br>
   * 编程语言  
     * 脚本语言  
-        * Python  
-  * Operations  
-    * add  
-    * delete  
-    * modify  
-    * search  
-    * tranversal  
+        * Python    
      
   
 ## 2.leran the operations of list
