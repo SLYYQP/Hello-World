@@ -6,8 +6,6 @@
 <br>
 * 编程语言  
     * 脚本语言  
-        * Python    
-     
   
 ## 2.leran the operations of list
 <br>
