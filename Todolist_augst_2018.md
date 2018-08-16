@@ -12,22 +12,46 @@
     * tranversal  
   
 ## 2.leran the operations of list
-<br>
-     * add,delete,modify,search,tranversal operations
+
+* Operations  
+    * add  
+    * delete  
+    * modify  
+    * search  
+    * tranversal  
   
 ## 3.leran the operations of dictionary
-<br>
-     * add,delete,modify,search,tranversal operations
+
+* Operations  
+    * add  
+    * delete  
+    * modify  
+    * search  
+    * tranversal  
    
 ## 4.leran the operations of tuple
-<br>
-     * add,delete,modify,search,tranversal operations
+
+* Operations  
+    * add  
+    * delete  
+    * modify  
+    * search  
+    * tranversal  
    
 ## 5.leran the operations of set
-<br>
-     * add,delete,modify,search,tranversal operations
+
    
+* Operations  
+    * add  
+    * delete  
+    * modify  
+    * search  
+    * tranversal  
 
 ## 6.leran the operations of string type
-<br>
-     * concat，split,replace operations
+
+* Operations  
+    * concat  
+    * split  
+    * replace  
+    * operation  
