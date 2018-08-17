@@ -5,7 +5,7 @@
 ## 1.learn the operations of array
 
 * Operations  
-    *create
+    * create  
     * add  
     * delete  
     * modify  
