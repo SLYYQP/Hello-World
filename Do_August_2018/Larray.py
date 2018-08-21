@@ -116,7 +116,7 @@ e3 = np.array([[1, 2], [3, 4], [5, 6]])
 print("水平分割：", np.hsplit(e3, 2)) # 水平分割（搞不懂，明明是垂直分割嘛？）
 print("与np.hsplit(a,2)效果一样:", np.split(e3, 2, axis=1))  # 与np.hsplit(a,2)效果一样。
 print(np.vsplit(e3, 3))
-print("与np.vsplit(a,3)效果一样:", np.split(e3, 3, axis=0))  # 。
+print("与np.vsplit(a,3)效果一样:", np.split(e3, 3, axis=0))  # 与np.vsplit(a,3)效果一样。
 print("..........................................分割线...................................................")
 # traversal
 
