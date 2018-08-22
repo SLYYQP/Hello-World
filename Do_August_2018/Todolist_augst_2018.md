@@ -1,4 +1,4 @@
-# Todo List In augst 2018
+# Todo List In august 2018
 
 
 
@@ -10,36 +10,36 @@
     * delete  
     * modify  
     * search  
-    * tranversal  
+    * traversal  
   
-## 2.leran the operations of list
+## 2.learn the operations of list
 
 * Operations  
     * add  
     * delete  
     * modify  
     * search  
-    * tranversal  
+    * traversal  
   
-## 3.leran the operations of dictionary
+## 3.learn the operations of dictionary
 
 * Operations  
     * add  
     * delete  
     * modify  
     * search  
-    * tranversal  
+    * traversal  
    
-## 4.leran the operations of tuple
+## 4.learn the operations of tuple
 
 * Operations  
     * add  
     * delete  
     * modify  
     * search  
-    * tranversal  
+    * traversal  
    
-## 5.leran the operations of set
+## 5.learn the operations of set
 
    
 * Operations  
@@ -47,9 +47,9 @@
     * delete  
     * modify  
     * search  
-    * tranversal  
+    * traversal  
 
-## 6.leran the operations of string type
+## 6.learn the operations of string type
 
 * Operations  
     * concat  
