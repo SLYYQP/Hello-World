@@ -6,7 +6,7 @@ import numpy as np
 # create array
 a1 = np.array((1, 2, 3, 4, 5))# 参数是元组
 a2 = np.array([6, 7, 8, 9, 0])# 参数是list
-a3 = np.array([[1, 2, 3], [4, 5, 6]])# 参数二维数组
+a3 = np.array([[1, 2, 3], [4, 5, 6]])# 参数二维list
 print(a1, a2, a3)
 print(a3.shape)#得到c的形状是2行3列
 
@@ -119,5 +119,23 @@ print(np.vsplit(e3, 3))
 print("与np.vsplit(a,3)效果一样:", np.split(e3, 3, axis=0))  # 与np.vsplit(a,3)效果一样。
 print("..........................................分割线...................................................")
 # traversal
-
+f1 = np.arange(9).reshape(3, 3)
+print("f1:", f1)
+for row in f1:
+    print("row:", row)
+'''
+[0 1 2]
+[3 4 5]
+[6 7 8]
+'''
+# 对数组中每个元素都进行处理，可以使用flat属性，该属性是一个数组元素迭代器：
+for element in f1.flat:
+    print("element", element)
+'''
+0 1 2 3 4 5 6 7 8
+'''
+[rows, cols] = f1.shape
+for i in range(rows-1):
+    for j in range(cols-1):
+        print("f1[j, i]:", f1[j, i])
 
