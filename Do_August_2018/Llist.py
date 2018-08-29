@@ -94,6 +94,15 @@ print("升序：", num)
 num.sort(reverse=True)#降序
 print("降序：", num)
 
+def takeSecond(elem):
+    return elem[1]
+
+random = [(2, 2), (3, 4), (4, 1), (1, 3)]
+
+random.sort(key=takeSecond, reverse=True)
+
+print("排序列表：", random)
+
 # traversal
 print("..........................................Traversal...................................................")
 # 1
