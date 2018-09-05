@@ -132,3 +132,12 @@ print("..........................................Operations.....................
 from compiler.ast import flatten
 list1 = [['1', '5'], ['2', '59', '36'], ['3', '46', '721', '3'], ['4', '5']]
 print(flatten(list1))
+
+# 分割
+list2 = [0, 1, 2, 3, 4, 5, 6, 7]
+for i in range(0, len(list2), 2):
+    print(list2[i:i+2])
+
+# 分割后放进一个列表中
+list3 = [list2[i:i+2] for i in range(0, len(list2), 2)]
+print(list3)
