@@ -125,3 +125,10 @@ for i in range(len(t1)):
 print("方法四：")
 for t1_id in iter(t1):
     print(t1_id)
+
+# operations
+print("..........................................Operations...................................................")
+# 降维 python2
+from compiler.ast import flatten
+list1 = [['1', '5'], ['2', '59', '36'], ['3', '46', '721', '3'], ['4', '5']]
+print(flatten(list1))
