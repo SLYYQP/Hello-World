@@ -1,6 +1,8 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 
+
+
 # create
 # list是python基本数据类型 python中的list是python的内置数据类型，list中的数据类不必相同的，而array的中的类型必须全部相同。
 print("..........................................Create...................................................")
@@ -131,7 +133,32 @@ print("..........................................Operations.....................
 # 降维 python2
 # from compiler.ast import flatten
 # list1 = [['1', '5'], ['2', '59', '36'], ['3', '46', '721', '3'], ['4', '5']]
-# print(flatten(list1))
+# print flatten(list1)
+
+"""
+将二维列表降为一维py3
+"""
+# 方法一
+list1 = [[4, 2, 3], [5, 9, 1], [7, 8, 9]]
+from itertools import chain
+list11 = list(chain.from_iterable(list1))
+print("list11:", list11)
+
+# 方法二
+list22 = [','.join(map(str, t)) for t in list1]
+print("list22:", list22)
+
+# 方法三
+from itertools import starmap
+list33 = list(starmap('{},{},{}'.format, list1))
+print("list33:", list33)
+
+# 方法四
+i = 0
+while i < 3:
+    list1[i] = str(list1[i])[1:3*3-1]
+    i = i + 1
+print("list1[0:3]:", list1[0:3])
 
 # 分割
 list2 = [0, 1, 2, 3, 4, 5, 6, 7]
