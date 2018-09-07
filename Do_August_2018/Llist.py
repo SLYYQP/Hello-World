@@ -158,6 +158,12 @@ l2 = list(set(l1))
 print("l2:", l2)
 
 # 方法三,利用lambda匿名函数和reduce函数处理
+"""
+reduce() 函数会对参数序列中元素进行累积。
+函数将一个数据集合（链表，元组等）中的所有数据进行下列操作：用传给 reduce 中的函数 function（有两个参数）
+先对集合中的第 1、2 个元素进行操作，得到的结果再与第三个数据用 function 函数运算，最后得到一个结果。
+reduce() 函数语法：reduce(function, iterable[, initializer])
+"""
 from functools import reduce
 func = lambda x, y: x if y in x else x + [y]
 l3 = reduce(func, [[], ] + l1)
@@ -168,7 +174,7 @@ import itertools
 l1.sort()
 it = itertools.groupby(l1)
 for k, g in it:
-    print("k:", k)
+    print("k:", k, list(g))
 
 # 方法五,无法保持原有顺序
 l4 = set(l1)
