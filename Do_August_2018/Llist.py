@@ -182,6 +182,15 @@ for x in l5:
         del l5[l5.index(x)]   # index从列表中找出某个值第一个匹配项的索引位置
 print("l5：", l5)
 
+l5 = [1, 2, 3, 3, 4, 2, 3, 4, 5, 6, 1]
+def delReapt(l5):
+    for x in l5:
+        while l5.count(x) > 1:
+            del l5[l5.index(x)]
+    return l5
+
+L = delReapt(l5)    # 注意：定义了函数，要使用函数
+print("L:", L)
 """
 将一维列表中的字符串转换成正型py3
 """
