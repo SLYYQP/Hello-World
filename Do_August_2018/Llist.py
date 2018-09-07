@@ -129,9 +129,9 @@ for t1_id in iter(t1):
 # operations
 print("..........................................Operations...................................................")
 # 降维 python2
-from compiler.ast import flatten
-list1 = [['1', '5'], ['2', '59', '36'], ['3', '46', '721', '3'], ['4', '5']]
-print(flatten(list1))
+# from compiler.ast import flatten
+# list1 = [['1', '5'], ['2', '59', '36'], ['3', '46', '721', '3'], ['4', '5']]
+# print(flatten(list1))
 
 # 分割
 list2 = [0, 1, 2, 3, 4, 5, 6, 7]
@@ -141,3 +141,70 @@ for i in range(0, len(list2), 2):
 # 分割后放进一个列表中
 list3 = [list2[i:i+2] for i in range(0, len(list2), 2)]
 print(list3)
+
+"""
+列表去重的6种方法
+"""
+# 方法一,可以保持之前的排列顺序
+l1 = [1, 2, 3, 3, 4, 2, 3, 4, 5, 6, 1]
+new_l1 = []
+for id in l1:
+    if id not in new_l1:
+        new_l1.append(id)
+print(new_l1)
+
+# 方法二,不会保留之前的顺序
+l2 = list(set(l1))
+print("l2:", l2)
+
+# 方法三,利用lambda匿名函数和reduce函数处理
+from functools import reduce
+func = lambda x, y: x if y in x else x + [y]
+l3 = reduce(func, [[], ] + l1)
+print("l3:", l3)
+
+# 方法四,使用itertools模块
+import itertools
+l1.sort()
+it = itertools.groupby(l1)
+for k, g in it:
+    print("k:", k)
+
+# 方法五,无法保持原有顺序
+l4 = set(l1)
+print("l4:", l4)
+
+# 方法六,while遍历去重
+l5 = [1, 2, 3, 3, 4, 2, 3, 4, 5, 6, 1]
+
+for x in l5:
+    while l5.count(x) > 1:   # count统计某个元素在列表种出现的次数
+        del l5[l5.index(x)]   # index从列表中找出某个值第一个匹配项的索引位置
+print("l5：", l5)
+
+"""
+将一维列表中的字符串转换成正型py3
+"""
+l6 = ['1', '2', '3', '4', '5', '6']
+l7 = list(map(int, l6))
+print('l7:', l7)
+
+"""
+将二维列表中的字符串转换成正型py3
+"""
+l8 = [['1', '2'], ['3', '4', '5'], ['6', '7', '8', '9']]
+list_to_int = []
+for each in l8:
+    line = list(map(lambda x: int(x), each))
+    list_to_int.append(line)
+print("list_to_int:", list_to_int)
+
+"""
+py2一维列表中的字符串转换成正型
+l6 = ['1', '2', '3', '4', '5', '6']
+list = map(int, l6)
+
+py2二维列表中的字符串转换成正型
+l8 = [['1', '2'], ['3', '4', '5'], ['6', '7', '8', '9']]
+list_to_int = map(lambda x: int(x), l8)
+"""
