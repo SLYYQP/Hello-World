@@ -250,3 +250,11 @@ py2二维列表中的字符串转换成正型
 l8 = [['1', '2'], ['3', '4', '5'], ['6', '7', '8', '9']]
 list_to_int = map(lambda x: int(x), l8)
 """
+
+"""
+打乱列表顺序
+"""
+import random as rd
+lis = [1, 2, 5, 7, 9, 10]
+rd.shuffle(lis)
+print(lis)
