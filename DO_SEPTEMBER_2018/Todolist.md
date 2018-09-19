@@ -18,6 +18,7 @@
     * create an array,list,dic whose atoms are objects, and sort the array and list  
     * tranveral the array or list and change the attribute values of the object in array  
     * tranveral the array or list and find the object which satisfies some condition  
+    * learn how to use 'main' method
   
 ## 3.learn the concept of module
 
