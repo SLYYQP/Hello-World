@@ -42,10 +42,10 @@ class Person:
     def stu(self):
         print("%s 说: 我 %d 岁。" % (self.name, self.age))
 
-# p = Person('Eve',10)
-# p.stu()
-# p1 = Person('bob', 9)
-# p1.stu()
+p = Person('Eve',9)
+p.stu()
+p1 = Person('bob', 10)
+p1.stu()
 
 # arr = np.array([p, p1])
 # print("arr:", arr)
@@ -56,7 +56,7 @@ class Person:
 #
 # newarr = sorted(arr, key=lambda x: x.age, reverse=True)
 # for i in newarr:
-#     print("对数组中的对象排序：", i.name, i.age)
+#     print("根据数组中的对象年龄排序：", i.name, i.age)
 
 # 列表
 # list = [p, p1]
@@ -65,14 +65,19 @@ class Person:
 #
 # list.sort(key=lambda x: x.age, reverse=True)
 # for i in list:
-#     print("对列表中的对象排序:", i.name, i.age)
+#     print("根据列表中的对象的年龄排序:", i.name, i.age)
 #
 
-
-
 # 字典
-
-
+dict = {}
+dict["a"] = p
+dict["b"] = p1
+print("字典：", dict)
+for i in dict:
+    print("遍历字典：", dict[i].name, dict[i].age)
+newdict = sorted(dict.items(), key=lambda x: x[1].age, reverse=True)
+for i in newdict:
+    print("根据字典中的对象的年龄排序：", i[1].name, i[1].age)
 
 """
 3、遍历数组、列表，改变数组中对象的属性值
