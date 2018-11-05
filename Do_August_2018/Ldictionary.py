@@ -167,3 +167,29 @@ for value5 in t1.values():
 # 5、遍历字典
 for kv in t1.items():
     print("after 5:", kv)
+
+# Sort
+print("..........................................Sort...................................................")
+dict1 = {'a': 2, 'b': 3, 'd': 4, 'c': 8}
+# 1.sorted()默认是对字典的键，从小到大进行排序
+dict2 = sorted(dict1)
+print("根据字典的键从小到大排序：", dict2)
+
+# 2.也可以先拿到所有的key，然后再对key排序
+list1 = sorted(dict1.keys(), reverse=True)
+print("先拿到所有的key，然后再对key排序:", list1)
+
+# 3.用dict1.values()得到所有的values，然后对value排序
+list2 = sorted(dict1.values())
+print("用dict1.values()得到所有的values，然后对value排序:", list2)
+
+# 4.也可以用dict1.items()，得到包含键，值的元组
+# 由于迭代对象是元组，返回值自然是元组组成的列表
+# 这里对排序的规则进行了定义，x指元组，x[1]是值，x[0]是键
+
+list3 = sorted(dict1.items(), key=lambda x: x[1])
+print("根据x[1]是值排序:", list3)
+
+# 5.对键进行排序
+list4 = sorted(dict1.items(), key=lambda x: x[0])
+print("根据x[0]是键排序",list4)
