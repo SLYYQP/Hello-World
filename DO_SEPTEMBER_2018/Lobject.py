@@ -47,22 +47,15 @@ p.stu()
 p1 = Person('bob', 10)
 p1.stu()
 
-# arr = np.array([p, p1])
-# print("arr:", arr)
+arr = np.array([p, p1])
+print("arr:", arr)
 
-# 遍历数组
-# for i in arr:
-#     print("遍历数组：", i.age)
-#
 # newarr = sorted(arr, key=lambda x: x.age, reverse=True)
 # for i in newarr:
 #     print("根据数组中的对象年龄排序：", i.name, i.age)
 
 # 列表
-# list = [p, p1]
-# for i in list:
-#     print("遍历列表：", i.age)
-#
+list = [p, p1]
 # list.sort(key=lambda x: x.age, reverse=True)
 # for i in list:
 #     print("根据列表中的对象的年龄排序:", i.name, i.age)
@@ -82,16 +75,30 @@ for i in newdict:
 """
 3、遍历数组、列表，改变数组中对象的属性值
 """
+# 遍历数组
+for i in arr:
+    i.age = 11
+    print("遍历数组：", i.age)
 
-
-
+# 遍历列表
+for i in list:
+    i.name = "lilisa"
+    print(" 遍历列表：", i.name)
 
 """
 4、遍历数组、列表，找到满足某些条件的对象
 """
+# 遍历数组
+for i in arr:
+    if i.age == 10:
+         print("满足条件值：", i.name, i.age)
+    else:
+        print("没有符合条件的值：", i.age)
 
-
-
+# 遍历列表
+for i in list:
+    if i.name == "lilisa":
+        print("名字为lilisa：", i.name, i.age)
 
 """
 5、学习怎样使用“main”方法
